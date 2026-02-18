@@ -198,9 +198,30 @@
         <section class="hero hero-style-two pos-rel">
             <div
   class="bg_img hero-bg"
-  data-background="assets/img/newimg/banner2.jpeg"
+  data-background="assets/img/KST09893.JPG"
   style="background-position: right;"
 >
+<style>
+    .hero-bg {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* Adjust 0.4 for lighter/darker overlay */
+  z-index: 1;
+}
+
+.hero-bg > * {
+  position: relative;
+  z-index: 2;
+}
+
+</style>
 
                 <div class="container">
                     <div class="col-lg-7 col-md-7">
