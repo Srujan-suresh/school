@@ -195,11 +195,15 @@
 
     <!-- main area start  -->
     <main>
+       
+       
         <!-- hero section start  -->
-        <section class="hero hero-style-two pos-rel">
+
+
+        <!-- <section class="hero hero-style-two pos-rel">
             <div
   class="bg_img hero-bg"
-  data-background="assets/img/newimg/CPR3897.JPG"
+  data-background="assets/img/banner66.jpeg"
   style="background-position: right;"
 >
 <style>
@@ -213,7 +217,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3); /* Adjust 0.4 for lighter/darker overlay */
+  background: rgba(0, 0, 0, 0.3); 
   z-index: 1;
 }
 
@@ -221,7 +225,6 @@
   position: relative;
   z-index: 2;
 }
-
 </style>
 
                 <div class="container">
@@ -241,7 +244,87 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+
+<section class="hero hero-style-two pos-rel">
+
+<div class="hero-bg">
+
+<video autoplay muted loop playsinline class="hero-video">
+    <source src="assets/img/banner66.mp4" type="video/mp4">
+</video>
+
+<style>
+
+.hero-bg{
+  position: relative;
+  height: 100vh; /* full screen height */
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover; /* makes video fill container */
+  z-index:0;
+}
+
+.hero-bg::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+  z-index:1;
+}
+
+.hero-bg .container{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  align-items:center; /* vertically center text */
+}
+
+</style>
+
+<div class="container">
+    <div class="col-lg-7 col-md-7">
+        <div class="hero__content-wrap">
+
+            <div class="section-title clr-white pt-25">
+                <span class="sub-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".4s" style="font-family:'Times New Roman', Times, serif;">
+                Shaping Young Minds for a Brighter Future
+                </span>
+
+                <h1 class="title mb-25 wow fadeInUp" data-wow-delay="200ms" data-wow-duration=".4s">
+                Admissions Open for 2026–27
+                </h1>
+
+                <p class="content wow fadeInUp" data-wow-delay="400ms" data-wow-duration=".4s" style="color:#fff;font-size:larger;">
+                <strong>Pre-Nursery to 10th Std | Recognised by Govt. of Karnataka</strong>
+                </p>
+            </div>
+
+            <div class="clg-btn mt-55 wow fadeInUp" data-wow-delay="600ms" data-wow-duration=".4s">
+                <a class="thm-btn thm-btn--white" href="contact.html">
+                    apply now
+                    <span><img src="assets/img/icon/learning.png" alt=""></span>
+                </a> 
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
+
+
         <!-- hero section end  -->
 
         <!-- feature + about section start  -->
