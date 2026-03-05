@@ -194,29 +194,34 @@
     <main>
        
         <!-- breadcrumb start -->
-        <section class="breadcrumb bg_img ul_li" data-background="assets/img/contactban.jpg">
-          <style>
-            .breadcrumb {
+        <section class="breadcrumb bg_img ul_li">
+
+<style>
+.breadcrumb {
   position: relative;
+  background-image: url("assets/img/contactban.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* dark overlay */
 .breadcrumb::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* adjust darkness */
+  background: rgba(0, 0, 0, 0.55);
   z-index: 1;
 }
 
-/* keep content above overlay */
+/* keep section content above overlay */
 .breadcrumb > * {
   position: relative;
   z-index: 2;
 }
+</style>
 
-          </style>
+
             <div class="container">
                 <div class="breadcrumb__content text-center">
                     <h2 class="breadcrumb__title">Our Gallery</h2>
